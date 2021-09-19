@@ -1,11 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import About from "./Containers/About";
+import Contact from "./Containers/Contact";
+import Experience from "./Containers/Experience";
+import Header from "./Containers/Header";
+import Portfolio from "./Containers/Portfolio";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <div className="App"></div>
-    </Router>
+    <div className="App">
+      <Header />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
+    </div>
   );
 }
 
