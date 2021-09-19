@@ -3,6 +3,11 @@ import { MainColors } from "./MainColors";
 
 export const NavbarWr = styled.nav`
   background-color: ${MainColors.dark_1};
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   padding: 20px 0;
   a {
     color: #fff;

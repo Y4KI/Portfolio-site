@@ -15,7 +15,7 @@ const ParticlesWr = styled(Particles)`
   background-position: 20% 80%;
   background-size: cover;
   background-attachment: fixed;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 `;
 export default function ParticleBackground() {

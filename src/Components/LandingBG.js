@@ -1,7 +1,6 @@
 import React from "react";
 import ParticleBackground from "../ParticleBackground";
 import Landing from "./Landing";
-import LineBreak from "./LineBreak";
 
 const LandingBG = () => {
   return (

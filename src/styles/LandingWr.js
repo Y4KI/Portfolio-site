@@ -3,7 +3,7 @@ import { MainColors } from "./MainColors";
 
 export const LandingWr = styled.div`
   background-color: transparent !important;
-  min-height: 90vh;
+  min-height: 100vh;
   justify-content: center;
   display: flex;
   align-items: center;
