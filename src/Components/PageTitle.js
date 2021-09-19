@@ -1,13 +1,14 @@
 import React from "react";
+import { PageTitleWr } from "../styles/PageTitleWr";
 
 const PageTitle = ({ title }) => {
   return (
-    <div className="pagetitle">
-      <h1 className="pagetitle__title">{title}</h1>
-      <div className="pagetitle__underlineBox">
-        <div className="pagetitle__underline"></div>
+    <PageTitleWr>
+      <h1>{title}</h1>
+      <div>
+        <div></div>
       </div>
-    </div>
+    </PageTitleWr>
   );
 };
 

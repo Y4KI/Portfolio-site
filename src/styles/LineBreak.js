@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { MainColors } from "./MainColors";
 
 export const LineBreakWr = styled.div`
   .dark {
     height: 20px;
-    background-color: #311d52;
+    background-color: ${MainColors.dark_1};
   }
   .light {
-    height: 50px;
+    height: 100px;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4976540958180147) 0%,

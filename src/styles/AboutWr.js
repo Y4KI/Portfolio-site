@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { MainColors } from "./MainColors";
 
 export const AboutWr = styled.div`
-  background-color: #090e35;
+  background-color: ${MainColors.dark_1};
   .row {
     padding: 40px 0 100px;
     .image {
@@ -9,7 +10,7 @@ export const AboutWr = styled.div`
         display: flex;
         justify-content: center;
         img {
-          border: 8px solid #311d52;
+          border: 8px solid ${MainColors.blue};
           border-radius: 50%;
           max-width: 400px;
           height: 400px;
@@ -22,7 +23,7 @@ export const AboutWr = styled.div`
       h1 {
         font-family: Poppins, sans-serif;
         letter-spacing: 1px;
-        color: #d1a135;
+        color: ${MainColors.blue};
       }
       p {
         font-family: Poppins, sans-serif;

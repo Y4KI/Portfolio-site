@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { MainColors } from "./MainColors";
 
 export const NavbarWr = styled.nav`
-  background-color: #311d52;
+  background-color: ${MainColors.dark_1};
   padding: 20px 0;
   a {
     color: #fff;
@@ -13,7 +14,7 @@ export const NavbarWr = styled.nav`
       font-size: 24px;
       letter-spacing: 2px;
       span {
-        color: #00c0ff;
+        color: ${MainColors.orange_2};
       }
     }
     ul {
@@ -22,7 +23,7 @@ export const NavbarWr = styled.nav`
       li {
         transition: all 0.2s ease-in-out;
         &:hover {
-          border-top: 3px solid #e8d5b5;
+          border-top: 3px solid ${MainColors.yellow};
         }
         a {
           font-size: 18px;
