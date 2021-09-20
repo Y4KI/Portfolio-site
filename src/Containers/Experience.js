@@ -6,7 +6,7 @@ import { ExpWr } from "../styles/ExpWr";
 
 const Experience = () => {
   return (
-    <ExpWr>
+    <ExpWr id="exp">
       <PageTitle title="EXPERIENCE" />
       <Timeline />
       <LineBreak />

@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavbarWr } from "../styles/NavbarWr";
 
-const Navbar = () => {
-  const [ScrollY, setScrollY] = useState(0);
-  window.addEventListener("scroll", () => {
-    setScrollY(window.scrollY);
-  });
-
+const Navbar = ({ SCY }) => {
   return (
-    <NavbarWr className={ScrollY < 80 ? "" : "TP"}>
+    <NavbarWr className={SCY < 80 ? "" : "TP"}>
       <div className="container d-flex justify-content-between">
         <a href="/">
           <span>PORT</span>FOLIO
