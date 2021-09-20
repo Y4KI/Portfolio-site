@@ -118,7 +118,9 @@ const Contact = () => {
               />
               <label>{message}</label>
             </div>
-            <button>SEND</button>
+            <div className="col-12">
+              <button>SEND</button>
+            </div>
           </form>
         </div>
       </div>

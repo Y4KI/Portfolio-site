@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import LandingBG from "../Components/LandingBG";
-import LineBreak from "../Components/LineBreak";
 import Navbar from "../Components/Navbar";
 import { MainColors } from "../styles/MainColors";
+import { FiArrowUp } from "react-icons/fi";
 
 const Header = () => {
   const [ScrollY, setScrollY] = useState(0);
@@ -22,16 +22,17 @@ const Header = () => {
     right: 20px;
     bottom: 20px;
     z-index: 1000;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
   `;
 
   return (
     <div>
       <Up href="#" className={ScrollY > 300 ? "toUp" : "toUp d-none"}>
-        up
+        <FiArrowUp />
       </Up>
       <Navbar SCY={ScrollY} />
       <LandingBG />
-      <LineBreak />
     </div>
   );
 };

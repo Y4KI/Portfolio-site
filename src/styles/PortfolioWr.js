@@ -3,6 +3,7 @@ import { MainColors } from "./MainColors";
 
 export const PortfolioWr = styled.div`
   background-color: ${MainColors.dark_1};
+  overflow: hidden;
   .content {
     h1 {
       font-family: Poppins, sans-serif;

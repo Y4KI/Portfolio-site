@@ -40,7 +40,7 @@ export const ContactWr = styled.div`
       border: 2px solid ${MainColors.yellow};
       background-color: transparent;
       padding: 10px 0;
-      margin: 12px 30px 0 12px;
+      margin: 12px 0 0;
       flex-grow: 1;
     }
   }

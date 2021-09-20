@@ -38,7 +38,7 @@ export const NavbarWr = styled.nav`
         a {
           font-size: 18px;
           letter-spacing: unset;
-          margin: 0 15px;
+          margin: 0 8px;
         }
       }
     }

@@ -15,6 +15,10 @@ export const AboutWr = styled.div`
           max-width: 400px;
           height: 400px;
           object-fit: cover;
+          @media screen and (max-width: 720px) {
+            max-width: 250px;
+            height: 250px;
+          }
         }
       }
     }

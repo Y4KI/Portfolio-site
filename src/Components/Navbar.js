@@ -1,5 +1,6 @@
 import React from "react";
 import { NavbarWr } from "../styles/NavbarWr";
+import { GoThreeBars } from "react-icons/go";
 
 const Navbar = ({ SCY }) => {
   return (
@@ -8,7 +9,7 @@ const Navbar = ({ SCY }) => {
         <a href="/">
           <span>PORT</span>FOLIO
         </a>
-        <ul className="d-flex m-0">
+        <ul className="d-sm-flex d-none m-0">
           <li>
             <a href="#about">About</a>
           </li>
@@ -22,6 +23,11 @@ const Navbar = ({ SCY }) => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div className="d-block d-sm-none">
+          <button>
+            <GoThreeBars />
+          </button>
+        </div>
       </div>
     </NavbarWr>
   );

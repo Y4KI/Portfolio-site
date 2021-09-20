@@ -9,7 +9,7 @@ const Cards = () => {
     console.log("ishladi");
   };
   return (
-    <CardWr className="row g-3">
+    <CardWr className="row gx-5">
       <div className="col-lg-4 col-md-6 d-flex justify-content-center">
         {Modal1 ? (
           <Modal close={() => setModal1(false)} open={() => setModal1(true)} />

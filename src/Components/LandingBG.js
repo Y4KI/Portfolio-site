@@ -4,7 +4,7 @@ import Landing from "./Landing";
 
 const LandingBG = () => {
   return (
-    <div className="overflow-hidden" style={{ height: "90vh" }}>
+    <div className="overflow-hidden" style={{ height: "100vh" }}>
       <ParticleBackground />
       <Landing />
     </div>
