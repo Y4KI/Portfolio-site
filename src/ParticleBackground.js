@@ -19,5 +19,5 @@ const ParticlesWr = styled(Particles)`
   width: 100%;
 `;
 export default function ParticleBackground() {
-  return <ParticlesWr params={ParticleConfig} />;
+  return <ParticlesWr params={ParticleConfig} className="d-none d-md-block" />;
 }

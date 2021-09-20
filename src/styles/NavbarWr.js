@@ -9,6 +9,11 @@ export const NavbarWr = styled.nav`
   right: 0;
   z-index: 1000;
   padding: 20px 0;
+  transition: 0.5s;
+  &.TP {
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+  }
   a {
     color: #fff;
   }
