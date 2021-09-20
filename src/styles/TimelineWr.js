@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MainColors } from "./MainColors";
 
 export const TimelineWr = styled.div`
   .wrapper {
@@ -16,18 +17,49 @@ export const TimelineWr = styled.div`
     .row {
       display: flex;
       section {
-        background: #fff;
+        background: ${MainColors.blue};
         border-radius: 5px;
         width: calc(50% - 40px);
         padding: 20px;
         position: relative;
+
+        .details,
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: ${MainColors.dark_1};
+        }
+        .details {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        .bottom {
+          a {
+            text-decoration: none;
+            background: ${MainColors.orange_2};
+            color: #fff;
+            padding: 7px 15px;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(0.97);
+            }
+          }
+        }
+        p {
+          margin: 10px 0 17px 0;
+          color: ${MainColors.dark_1};
+        }
 
         &::before {
           position: absolute;
           content: "";
           height: 15px;
           width: 15px;
-          background: #fff;
+          background: ${MainColors.yellow};
           top: 28px;
           z-index: -1;
           transform: rotate(45deg);
@@ -62,13 +94,12 @@ export const TimelineWr = styled.div`
   .row section .icon,
   .center-line .scroll-icon {
     position: absolute;
-    background: #f2f2f2;
+    background: #fff;
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ff7979;
     font-size: 17px;
     box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
       0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -78,32 +109,6 @@ export const TimelineWr = styled.div`
     left: 50%;
     font-size: 25px;
     transform: translateX(-50%);
-  }
-  .row section .details,
-  .row section .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .row section .details .title {
-    font-size: 22px;
-    font-weight: 600;
-  }
-  .row section p {
-    margin: 10px 0 17px 0;
-  }
-  .row section .bottom a {
-    text-decoration: none;
-    background: #ff7979;
-    color: #fff;
-    padding: 7px 15px;
-    border-radius: 5px;
-    /* font-size: 17px; */
-    font-weight: 400;
-    transition: all 0.3s ease;
-  }
-  .row section .bottom a:hover {
-    transform: scale(0.97);
   }
   @media (max-width: 790px) {
     .wrapper .center-line {

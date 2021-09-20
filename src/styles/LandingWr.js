@@ -8,7 +8,7 @@ export const LandingWr = styled.div`
   display: flex;
   align-items: center;
   font-family: Poppins, sans-serif;
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4976540958180147) 0%,

@@ -43,4 +43,32 @@ export const NavbarWr = styled.nav`
       }
     }
   }
+  .bar {
+    position: relative;
+    button {
+      padding: 5px 8px;
+      background-color: transparent;
+      border: none;
+      color: ${MainColors.yellow};
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    ul {
+      position: absolute;
+      transition: all 0.5s;
+      width: 0px;
+      background-color: ${MainColors.dark_1};
+      top: 50px;
+      right: -55px;
+      padding: 20px;
+      &.TP {
+        background-color: #ffffff20;
+        backdrop-filter: blur(10px);
+      }
+      &.active {
+        width: 200px;
+      }
+    }
+  }
 `;

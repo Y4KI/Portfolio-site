@@ -1,5 +1,6 @@
 import React from "react";
 import { TimelineWr } from "../styles/TimelineWr";
+import { FiArrowUp } from "react-icons/fi";
 
 const Timeline = () => {
   return (
@@ -7,7 +8,9 @@ const Timeline = () => {
       <div class="wrapper">
         <div class="center-line">
           <a href="#" class="scroll-icon">
-            <i className="icon"></i>
+            <i className="icon">
+              <FiArrowUp />
+            </i>
           </a>
         </div>
         <div class="row row-1">
