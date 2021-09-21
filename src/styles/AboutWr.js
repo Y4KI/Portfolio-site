@@ -35,6 +35,10 @@ export const AboutWr = styled.div`
         text-transform: capitalize;
         line-height: 50px;
         text-align: justify;
+        .marked {
+          font-size: 20px;
+          color: ${MainColors.yellow};
+        }
       }
     }
   }

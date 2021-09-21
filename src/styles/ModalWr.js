@@ -5,7 +5,7 @@ export const ModalWr = styled.div`
   justify-content: center;
   position: fixed;
   z-index: 10;
-  top: 0;
+  top: 50px;
   left: 0;
   height: 100%;
   width: 100%;

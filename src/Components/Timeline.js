@@ -7,7 +7,7 @@ const Timeline = () => {
     <TimelineWr className="container">
       <div class="wrapper">
         <div class="center-line">
-          <a href="#" class="scroll-icon">
+          <a href="#exp" class="scroll-icon">
             <i className="icon">
               <FiArrowUp />
             </i>

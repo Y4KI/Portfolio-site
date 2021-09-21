@@ -32,6 +32,8 @@ export const LandingWr = styled.div`
       color: ${MainColors.orange_2};
       letter-spacing: 5px;
       margin: 10px 0 30px;
+      background-color: ${MainColors.blue}40;
+      backdrop-filter: blur(10px);
     }
     button {
       background-color: #00000020;
