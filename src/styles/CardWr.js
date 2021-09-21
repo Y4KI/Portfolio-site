@@ -40,7 +40,7 @@ export const CardWr = styled.div`
         background-color: ${MainColors.blue};
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
         @media screen and (max-width: 768px) {
           width: 70%;
           height: 70%;
@@ -64,9 +64,9 @@ export const CardWr = styled.div`
         min-height: 220px;
       }
       img {
-        border: 5px solid ${MainColors.orange_1};
+        border: 1px solid ${MainColors.orange_1};
         transition: all 0.5s ease;
-        border-radius: 20px;
+        border-radius: 10px;
         height: 100%;
         max-width: 100%;
         @media screen and (max-width: 768px) {

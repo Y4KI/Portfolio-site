@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PageTitle from "../Components/PageTitle";
 import { ContactWr } from "../styles/ContactWr";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [name, setname] = useState("");
@@ -59,7 +60,21 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    CheckInfo();
+
+    emailjs.sendForm(
+        "service_cyxjqeq",
+        "template_4f55shk",
+        e.target,
+        "user_LNfzahvYSrS34hADTpz3P"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
