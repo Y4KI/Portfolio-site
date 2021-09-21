@@ -12,7 +12,7 @@ export const NavbarWr = styled.nav`
   transition: 0.5s;
   &.TP {
     background-color: #ffffff20;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
   }
   a {
     color: #fff;
@@ -62,6 +62,13 @@ export const NavbarWr = styled.nav`
       top: 50px;
       right: -55px;
       padding: 20px;
+      li {
+        padding: 10px 0;
+        &:hover {
+          border-bottom: 3px solid ${MainColors.yellow};
+          border-top: none;
+        }
+      }
       &.TP {
         background-color: #ffffff20;
         backdrop-filter: blur(10px);

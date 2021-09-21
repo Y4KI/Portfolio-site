@@ -34,16 +34,44 @@ const Navbar = ({ SCY }) => {
           </button>
           <ul className={`${bar ? "active" : ""} ${SCY < 80 ? "" : "TP"}`}>
             <li>
-              <a href="#about">About</a>
+              <a
+                onClick={() => {
+                  setbar(!bar);
+                }}
+                href="#about"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#exp">Experience</a>
+              <a
+                onClick={() => {
+                  setbar(!bar);
+                }}
+                href="#exp"
+              >
+                Experience
+              </a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a
+                onClick={() => {
+                  setbar(!bar);
+                }}
+                href="#portfolio"
+              >
+                Portfolio
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                onClick={() => {
+                  setbar(!bar);
+                }}
+                href="#contact"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>

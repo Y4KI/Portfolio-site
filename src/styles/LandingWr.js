@@ -16,7 +16,7 @@ export const LandingWr = styled.div`
         rgba(0, 0, 0, 1) 99%
       ),
       url("/Landing.jpg");
-    background-position: 20% 80%;
+    background-position: 32% 50%;
     background-size: cover;
     background-attachment: fixed;
   }
