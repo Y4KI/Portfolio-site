@@ -1,8 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import { LandingWr } from "../styles/LandingWr";
-import { MainColors } from "../styles/MainColors";
 
 const Landing = () => {
   return (

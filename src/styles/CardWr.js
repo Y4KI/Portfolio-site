@@ -12,9 +12,10 @@ export const CardWr = styled.div`
       position: relative;
       width: 100%;
       height: 100%;
-      transition: all 0.8s ease-in-out;
+      transition: all 800ms ease-in-out;
       transform-style: preserve-3d;
-      transform: rotateY(-15deg);
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
     }
     &__Front {
       position: absolute;
@@ -39,9 +40,7 @@ export const CardWr = styled.div`
         background-color: ${MainColors.blue};
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(20px);
         border-radius: 20px;
-        perspective: 100px;
         @media screen and (max-width: 768px) {
           width: 70%;
           height: 70%;
@@ -51,7 +50,7 @@ export const CardWr = styled.div`
           font-weight: 500;
           font-size: 50px;
           letter-spacing: 3px;
-          transform: translateZ(10px);
+          text-shadow: 5px 10px 15px black;
         }
       }
     }
@@ -67,10 +66,9 @@ export const CardWr = styled.div`
       img {
         border: 5px solid ${MainColors.orange_1};
         transition: all 0.5s ease;
-        border-radius: 10px;
-        height: 80%;
+        border-radius: 20px;
+        height: 100%;
         max-width: 100%;
-        opacity: 0.7;
         @media screen and (max-width: 768px) {
           max-width: 70%;
         }

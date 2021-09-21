@@ -12,23 +12,3 @@ a:hover {
 li {
   list-style: none !important;
 }
-.particlesCover {
-  position: relative;
-  overflow: hidden;
-}
-.pagetitle {
-  text-align: center;
-  padding: 20px 0;
-}
-.pagetitle__title {
-  color: #00c0ff;
-}
-.pagetitle__underlineBox {
-  display: flex;
-  justify-content: center;
-}
-.pagetitle__underline {
-  width: 80px;
-  height: 5px;
-  background-color: #a40043;
-}

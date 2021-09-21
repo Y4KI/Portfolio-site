@@ -22,6 +22,7 @@ export const LandingWr = styled.div`
   }
   div {
     text-align: center;
+    z-index: 1;
     h1 {
       font-size: 60px;
       color: ${MainColors.yellow};
