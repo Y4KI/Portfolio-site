@@ -17,14 +17,14 @@ const About = () => {
           <div className="col-lg-6 right">
             <h1>Saida'lo Buzrukov</h1>
             <p>
-              <span className="marked">Saida'lo Buzrukov</span> 20 years old
-              young boy Who has got a big passion for Web Programming! Lives in
-              a <span className="marked">small street</span> in Tashkent.
-              Currently he's studying in a one of the Most Famous univercity in
-              <span className="marked"> UZBEKISTAN</span> known by name Tashkent
-              Univercity International Technologies{" "}
-              <span className="marked">(TUIT)</span>. Coding is a part of his
-              life as <span className="marked">Hobby and Job</span>!
+              <span className="marked">Saidalo Buzrukov</span> - 20 years old, a
+              young boy who has a great passion for programming. Lives on a
+              <span className="marked"> small street</span> in Tashkent.
+              Currently he is studying at one of the famous universities in
+              <span className="marked"> Uzbekistan</span>, Tashkent University
+              of Information Technologies, known by name{" "}
+              <span className="marked">TUIT </span>. Coding is a part of his
+              life as a hobby and as a job!
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavbarWr } from "../styles/NavbarWr";
 import { GoThreeBars } from "react-icons/go";
+import { Link } from "react-scroll";
 
 const Navbar = ({ SCY }) => {
   const [bar, setbar] = useState(false);
@@ -12,16 +13,48 @@ const Navbar = ({ SCY }) => {
         </a>
         <ul className="d-sm-flex d-none m-0">
           <li>
-            <a href="#about">About</a>
+            <Link
+              className="test6"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-80}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <a href="#exp">Experience</a>
+            <Link
+              className="test6"
+              to="exp"
+              spy={true}
+              smooth={true}
+              offset={-80}
+            >
+              Experience
+            </Link>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <Link
+              className="test6"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-80}
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link
+              className="test6"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-80}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         <div className="d-block d-sm-none bar">
