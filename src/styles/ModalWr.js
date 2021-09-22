@@ -10,32 +10,56 @@ export const ModalWr = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #00000080;
+  background-color: #00000099;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
   .contentWrap {
-    border-radius: 5px;
-    width: 500px;
-    height: 600px;
-    background-color: #ffffff60;
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff80;
     backdrop-filter: blur(15px);
-    z-index: 11;
     padding: 10px;
-    margin: 50px 0 0;
+    margin: 40px 2%;
+    border-radius: 10px;
     font-family: Poppins, sans-serif;
-    div {
-      .flex {
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+      span {
+        padding: 0 6px;
+        cursor: pointer;
+      }
+    }
+    .imgBox {
+      width: 100%;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+    .infoBox {
+      width: 100%;
+      h2 {
+        text-align: center;
+        margin: 10px 0 0;
+        color: ${MainColors.dark_2};
+      }
+      p {
+        text-align: center;
+        font-style: italic;
+        color: ${MainColors.dark_2};
+      }
+      .links {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &:first-child {
-          font-size: 20px;
-          color: ${MainColors.yellow};
-        }
-        .btn {
-          color: ${MainColors.yellow};
-          font-size: 20px;
-          border-radius: 6px;
-          border: 1px solid ${MainColors.yellow};
-          font-weight: 700;
+        flex-direction: column;
+        a {
+          text-align: center;
         }
       }
     }
