@@ -19,6 +19,7 @@ const Navbar = ({ SCY }) => {
               spy={true}
               smooth={true}
               offset={-80}
+              duration={100}
             >
               About
             </Link>
@@ -30,6 +31,7 @@ const Navbar = ({ SCY }) => {
               spy={true}
               smooth={true}
               offset={-80}
+              duration={100}
             >
               Experience
             </Link>
@@ -41,6 +43,7 @@ const Navbar = ({ SCY }) => {
               spy={true}
               smooth={true}
               offset={-80}
+              duration={100}
             >
               Portfolio
             </Link>
@@ -52,6 +55,7 @@ const Navbar = ({ SCY }) => {
               spy={true}
               smooth={true}
               offset={-80}
+              duration={100}
             >
               Contact
             </Link>
@@ -67,44 +71,64 @@ const Navbar = ({ SCY }) => {
           </button>
           <ul className={`${bar ? "active" : ""} ${SCY < 80 ? "" : "TP"}`}>
             <li>
-              <a
+              <Link
                 onClick={() => {
                   setbar(!bar);
                 }}
-                href="#about"
+                className="test6"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 onClick={() => {
                   setbar(!bar);
                 }}
-                href="#exp"
+                className="test6"
+                to="exp"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
               >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 onClick={() => {
                   setbar(!bar);
                 }}
-                href="#portfolio"
+                className="test6"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
               >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 onClick={() => {
                   setbar(!bar);
                 }}
-                href="#contact"
+                className="test6"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -36,6 +36,7 @@ export const NavbarWr = styled.nav`
           border-top: 3px solid ${MainColors.yellow};
         }
         a {
+          cursor: pointer;
           font-size: 18px;
           letter-spacing: unset;
           margin: 0 8px;
