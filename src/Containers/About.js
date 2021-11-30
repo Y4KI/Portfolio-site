@@ -11,7 +11,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-6 image">
             <div>
-              <img src="/Image.jpg" alt="IMAGE" />
+              <img src="/Image.jpg" alt="portret" />
             </div>
           </div>
           <div className="col-lg-6 right">

@@ -38,10 +38,10 @@ const Modal = ({ close, index }) => {
           <h2>{ModalInfo[index].title}</h2>
           <p>{ModalInfo[index].subtitle}</p>
           <div className="links">
-            <a href={ModalInfo[index].link} target="_blank">
+            <a href={ModalInfo[index].link} target="_blank" rel="noreferrer">
               Visit the Site
             </a>
-            <a href={ModalInfo[index].github} target="_blank">
+            <a href={ModalInfo[index].github} target="_blank" rel="noreferrer">
               Code source is here
             </a>
           </div>

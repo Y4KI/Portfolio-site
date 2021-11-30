@@ -8,18 +8,16 @@ export const LandingWr = styled.div`
   display: flex;
   align-items: center;
   font-family: Poppins, sans-serif;
-  @media screen and (max-width: 768px) {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.4976540958180147) 0%,
-        rgba(0, 0, 0, 0.5021358885351015) 80%,
-        rgba(0, 0, 0, 1) 99%
-      ),
-      url("/Landing.jpg");
-    background-position: 32% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4976540958180147) 0%,
+      rgba(0, 0, 0, 0.5021358885351015) 80%,
+      rgba(0, 0, 0, 1) 99%
+    ),
+    url("/Landing.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   div {
     text-align: center;
     z-index: 1;
