@@ -15,6 +15,18 @@ const Navbar = ({ SCY }) => {
           <li>
             <Link
               className="test6"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={100}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="test6"
               to="about"
               spy={true}
               smooth={true}

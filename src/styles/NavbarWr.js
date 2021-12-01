@@ -32,6 +32,7 @@ export const NavbarWr = styled.nav`
       justify-content: space-between;
       li {
         transition: all 0.2s ease-in-out;
+        position: relative;
         &:hover {
           border-top: 3px solid ${MainColors.yellow};
         }
@@ -71,8 +72,8 @@ export const NavbarWr = styled.nav`
         }
       }
       &.TP {
-        background-color: #ffffff20;
-        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
       }
       &.active {
         width: 200px;

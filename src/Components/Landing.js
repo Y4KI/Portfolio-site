@@ -5,7 +5,7 @@ import { LandingWr } from "../styles/LandingWr";
 const Landing = () => {
   return (
     <div className="particlesCover">
-      <LandingWr>
+      <LandingWr id="home">
         <div>
           <h1>FrontEnd Developer</h1>
           <p>

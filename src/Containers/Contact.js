@@ -8,20 +8,24 @@ const Contact = () => {
   const [email, setemail] = useState("");
   const [inpEmail, setinpEmail] = useState("");
   const [number, setnumber] = useState("");
-  const [inpNumber, setinpNumber] = useState("+998-");
+  const [inpNumber, setinpNumber] = useState("");
   const [topic, settopic] = useState("");
   const [inpTopic, setinpTopic] = useState("");
   const [message, setmessage] = useState("");
   const [inpMessage, setinpMessage] = useState("");
 
   const CheckInfo = () => {
-    inpName === "" ? setname("Please write your name") : setname("");
-    inpEmail === "" ? setemail("Please write your email") : setemail("");
-    inpNumber === "" ? setnumber("Please write your number") : setnumber("");
-    inpTopic === ""
+    inpName.trim() === "" ? setname("Please write your name") : setname("");
+    inpEmail.trim() === "" ? setemail("Please write your email") : setemail("");
+    inpNumber.trim() === ""
+      ? setnumber("Please write your number")
+      : setnumber("");
+    inpTopic.trim() === ""
       ? settopic("Please write the Topic of your Message")
       : settopic("");
-    inpMessage === "" ? setmessage("Please write the Message") : setmessage("");
+    inpMessage.trim() === ""
+      ? setmessage("Please write the Message")
+      : setmessage("");
   };
 
   const sendEmail = (e) => {
