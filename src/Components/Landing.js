@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { LandingWr } from "../styles/LandingWr";
 
@@ -52,7 +53,18 @@ const Landing = () => {
               }}
             />
           </p>
-          <button>Contact Me</button>
+          <button>
+            <Link
+              className="test6"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={100}
+            >
+              CONTACT ME
+            </Link>
+          </button>
         </div>
       </LandingWr>
     </div>

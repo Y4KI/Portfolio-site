@@ -41,12 +41,14 @@ export const LandingWr = styled.div`
     }
     button {
       background-color: #00000020;
-      color: #ffffff90;
       padding: 15px 30px;
       border: 2px solid ${MainColors.orange_1};
       transition: all 0.4s ease-in-out;
       letter-spacing: 1.5px;
       font-size: 20px;
+      a {
+        color: #ffffff90;
+      }
       &:hover {
         background-color: #00000040;
         letter-spacing: 1.75px;

@@ -15,7 +15,7 @@ const Header = () => {
       <Up href="#" className={ScrollY > 300 ? "toUp" : "toUp d-none"}>
         <FiArrowUp />
       </Up>
-      <Navbar SCY={ScrollY} />
+      <Navbar ScrollY={ScrollY} />
       <LandingBG />
     </div>
   );

@@ -6,7 +6,7 @@ const PageTitle = ({ title }) => {
     <PageTitleWr>
       <h1>{title}</h1>
       <div>
-        <div></div>
+        <div />
       </div>
     </PageTitleWr>
   );
