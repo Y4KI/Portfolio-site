@@ -39,7 +39,7 @@ const Contact = () => {
         <PageTitle title="CONTACT" />
         <div className="content">
           <form className="row" onSubmit={sendEmail}>
-            <div className="col-lg-6">
+            <div className="col-lg-6 p-0">
               <input
                 type="text"
                 name="name"
@@ -77,7 +77,7 @@ const Contact = () => {
               />
               <label>{topic}</label>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 p-0">
               <textarea
                 type="text"
                 name="message"
@@ -89,7 +89,7 @@ const Contact = () => {
               />
               <label>{message}</label>
             </div>
-            <div className="col-12">
+            <div className="col-12 p-0">
               <button>SEND</button>
             </div>
           </form>

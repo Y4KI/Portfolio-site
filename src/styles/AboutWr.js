@@ -38,6 +38,11 @@ export const AboutWr = styled.div`
           color: ${MainColors.yellow};
         }
       }
+      @media screen and (max-width: 768px) {
+        p {
+          line-height: 30px;
+        }
+      }
     }
   }
 `;

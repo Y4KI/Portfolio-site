@@ -14,10 +14,13 @@ export const ContactWr = styled.div`
         outline: none;
         padding: 5px;
         margin-bottom: 10px;
-        background-color: ${MainColors.dark_1} ;
+        background-color: ${MainColors.dark_1};
         border: none;
         border-bottom: 1px solid ${MainColors.yellow};
         color: #fff;
+        &:focus {
+          border-bottom: 1px solid ${MainColors.orange_1};
+        }
       }
       label {
         color: ${MainColors.orange_2};

@@ -3,7 +3,7 @@ import { MainColors } from "./MainColors";
 
 export const TimelineWr = styled.div`
   .wrapper {
-    padding: 0 20px;
+    padding: 0 12px;
     position: relative;
     .center-line {
       position: absolute;
