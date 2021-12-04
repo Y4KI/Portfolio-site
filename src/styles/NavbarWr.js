@@ -72,7 +72,7 @@ export const NavbarWr = styled.nav`
       justify-content: space-evenly;
       flex-direction: column;
       transition: all 0.5s;
-      padding: 0;``
+      padding: 0;
       margin: 0;
       height: 60%;
       li {
