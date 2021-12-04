@@ -25,12 +25,10 @@ export const AboutWr = styled.div`
     .right {
       text-align: center;
       h1 {
-        font-family: Poppins, sans-serif;
         letter-spacing: 1px;
         color: ${MainColors.blue};
       }
       p {
-        font-family: Poppins, sans-serif;
         color: #fff;
         text-transform: capitalize;
         line-height: 50px;

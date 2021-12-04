@@ -24,7 +24,6 @@ export const ModalWr = styled.div`
     padding: 10px;
     margin: 40px 2%;
     border-radius: 10px;
-    font-family: Poppins, sans-serif;
     .details {
       display: flex;
       justify-content: space-between;

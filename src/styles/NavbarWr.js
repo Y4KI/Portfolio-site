@@ -20,7 +20,6 @@ export const NavbarWr = styled.nav`
   div {
     align-items: center;
     a {
-      font-family: Poppins, sans-serif;
       font-size: 24px;
       letter-spacing: 2px;
       span {
@@ -28,11 +27,10 @@ export const NavbarWr = styled.nav`
       }
     }
     ul {
-      align-items: center;
       justify-content: space-between;
       li {
         transition: all 0.2s ease-in-out;
-        position: relative;
+        border-top: 3px solid transparent;
         &:hover {
           border-top: 3px solid ${MainColors.yellow};
         }
@@ -44,9 +42,6 @@ export const NavbarWr = styled.nav`
         }
       }
     }
-  }
-  .bar {
-    position: relative;
     button {
       padding: 5px 8px;
       background-color: transparent;
@@ -56,27 +51,35 @@ export const NavbarWr = styled.nav`
       flex-direction: column;
       justify-content: center;
     }
+  }
+  .bar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    background-color: ${MainColors.dark_1};
+    transition: 400ms all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &.active {
+      left: 0;
+    }
     ul {
-      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
       transition: all 0.5s;
-      width: 0px;
-      background-color: ${MainColors.dark_1};
-      top: 50px;
-      right: -55px;
-      padding: 20px;
+      padding: 0;``
+      margin: 0;
+      height: 60%;
       li {
-        padding: 10px 0;
-        &:hover {
-          border-bottom: 3px solid ${MainColors.yellow};
-          border-top: none;
+        margin: 10px 0;
+        button {
+          transform: scale(1.5);
         }
-      }
-      &.TP {
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
-      }
-      &.active {
-        width: 200px;
       }
     }
   }

@@ -6,7 +6,6 @@ export const PortfolioWr = styled.div`
   overflow: hidden;
   .content {
     h1 {
-      font-family: Poppins, sans-serif;
       color: ${MainColors.yellow};
       text-align: center;
       font-size: 20px;

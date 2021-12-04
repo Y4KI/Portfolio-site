@@ -36,7 +36,6 @@ export const ContactWr = styled.div`
     button {
       color: ${MainColors.blue};
       font-weight: 500;
-      font-family: Poppins, sans-serif;
       border: 2px solid ${MainColors.yellow};
       background-color: transparent;
       padding: 10px 0;

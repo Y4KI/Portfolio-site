@@ -7,7 +7,6 @@ export const LandingWr = styled.div`
   justify-content: center;
   display: flex;
   align-items: center;
-  font-family: Poppins, sans-serif;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.4976540958180147) 0%,
