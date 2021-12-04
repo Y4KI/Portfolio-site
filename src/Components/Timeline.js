@@ -3,6 +3,50 @@ import { TimelineWr } from "../styles/TimelineWr";
 import { FiArrowUp } from "react-icons/fi";
 
 const Timeline = () => {
+  let TimelineData = [
+    {
+      theme: "HTML & CSS",
+      date: "3rd Feb 2021",
+      content:
+        "I started my way of being ProDeveloper from 3rd february by learning basics of Front-End as HTML and CSS",
+      id: 1,
+    },
+    {
+      theme: "Javascript",
+      date: "10th March 2021",
+      content:
+        "Learning basics didn't take long so I continued my way by learning JS and all his functionalities",
+      id: 2,
+    },
+    {
+      theme: "SASS & Bootstrap",
+      date: "15th May 2021",
+      content:
+        "Working with tool like CSS started to become boring so I decided to learn something more fun",
+      id: 3,
+    },
+    {
+      theme: "React JS",
+      date: "1st June 2021",
+      content:
+        "I learned things enough to go straight to learn a technology more powerfull and I decided to own power of React JS",
+      id: 4,
+    },
+    {
+      theme: "Next JS",
+      date: "10th July 2021",
+      content:
+        "Things had become interesting and also challenging so I thougth that It's time to take my knowledge to the next level",
+      id: 5,
+    },
+    {
+      theme: "Webpack & api",
+      date: "1th Sep 2021",
+      content:
+        "After all of them I didn't want to stop so I got going to deeper in that way and acquired a knowledge of webpack and api",
+      id: 6,
+    },
+  ];
   return (
     <TimelineWr className="container">
       <div className="wrapper">
@@ -13,114 +57,22 @@ const Timeline = () => {
             </i>
           </a>
         </div>
-        <div className="row row-1">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 1</span>
-              <span>1st Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
-        <div className="row row-2">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 2</span>
-              <span>2nd Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
-        <div className="row row-1">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 3</span>
-              <span>3rd Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
-        <div className="row row-2">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 4</span>
-              <span>4th Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
-        <div className="row row-1">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 5</span>
-              <span>5th Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
-        <div className="row row-2">
-          <section>
-            <i className="icon"></i>
-            <div className="details">
-              <span className="title">Title of Section 6</span>
-              <span>6th Jan 2021</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
-            </p>
-            <div className="bottom">
-              <a href="/">Read more</a>
-              <i>- Someone famous</i>
-            </div>
-          </section>
-        </div>
+        {TimelineData.map((e) => (
+          <div className={`row row-${(e.id % 2) + 1}`} key={e.id}>
+            <section>
+              <i className="icon"></i>
+              <div className="details">
+                <span className="title">{e.theme}</span>
+                <span>{e.date}</span>
+              </div>
+              <p>{e.content}</p>
+              <div className="bottom">
+                <a href="/">Read more</a>
+                <i>- My Roadmap</i>
+              </div>
+            </section>
+          </div>
+        ))}
       </div>
     </TimelineWr>
   );
