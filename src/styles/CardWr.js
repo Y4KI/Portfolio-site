@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { MainColors } from "./MainColors";
 
+let size = "width: 100%; height: 100%;";
+const position3d =
+  "position: absolute; backface-visibility: hidden; display: flex;";
+
 export const CardWr = styled.div`
   padding: 0 0 80px;
   .FlipCard:hover .FlipCard__Cover {
@@ -9,42 +13,29 @@ export const CardWr = styled.div`
   .FlipCard {
     perspective: 1000px;
     &__Cover {
+      ${size}
       position: relative;
-      width: 100%;
-      height: 100%;
       transition: all 800ms ease-in-out;
       transform-style: preserve-3d;
       transform: rotateY(0deg);
-      transform-style: preserve-3d;
     }
     &__Front {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      display: flex;
+      ${size}
+      ${position3d}
       justify-content: center;
     }
     &__Back {
+      ${size}
+      ${position3d}
       transform: rotateY(180deg);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      display: flex;
       justify-content: center;
       color: ${MainColors.orange_2};
       div {
+        ${size}
         display: flex;
         justify-content: center;
         background-color: ${MainColors.blue};
-        width: 100%;
-        height: 100%;
         border-radius: 10px;
-        @media screen and (max-width: 768px) {
-          width: 70%;
-          height: 70%;
-        }
         h2 {
           font-weight: 500;
           font-size: 50px;
@@ -59,15 +50,11 @@ export const CardWr = styled.div`
       cursor: pointer;
       align-items: center;
       min-height: 250px;
-      @media screen and (max-width: 768px) {
-        min-height: 220px;
-      }
       img {
+        ${size}
         border: 1px solid ${MainColors.orange_1};
         transition: all 0.5s ease;
         border-radius: 10px;
-        height: 100%;
-        max-width: 100%;
       }
     }
   }

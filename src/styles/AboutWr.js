@@ -4,13 +4,13 @@ import { MainColors } from "./MainColors";
 export const AboutWr = styled.div`
   background-color: ${MainColors.dark_1};
   .row {
-    padding: 40px 0 100px;
     .image {
       div {
         display: flex;
         justify-content: center;
         img {
           border: 8px solid ${MainColors.blue};
+          margin-bottom: 20px;
           border-radius: 50%;
           max-width: 400px;
           height: 400px;

@@ -77,7 +77,7 @@ const Contact = () => {
               />
               <label>{topic}</label>
             </div>
-            <div className="col-lg-6 p-0">
+            <div className="col-lg-6">
               <textarea
                 type="text"
                 name="message"
@@ -94,6 +94,14 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        {/* <div className="SocialMedia">
+          <a href="/">
+            <AiFillGithub />
+          </a>
+          <a href="/">
+            <BsTelegram />
+          </a>
+        </div> */}
       </div>
     </ContactWr>
   );

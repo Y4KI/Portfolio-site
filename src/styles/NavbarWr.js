@@ -34,6 +34,9 @@ export const NavbarWr = styled.nav`
         &:hover {
           border-top: 3px solid ${MainColors.yellow};
         }
+        &.bordered {
+          border-top: 3px solid ${MainColors.yellow};
+        }
         a {
           cursor: pointer;
           font-size: 18px;

@@ -22,7 +22,6 @@ export const TimelineWr = styled.div`
         width: calc(50% - 40px);
         padding: 20px;
         position: relative;
-
         .details,
         .bottom {
           display: flex;
@@ -53,7 +52,6 @@ export const TimelineWr = styled.div`
           margin: 10px 0 17px 0;
           color: ${MainColors.dark_1};
         }
-
         &::before {
           position: absolute;
           content: "";

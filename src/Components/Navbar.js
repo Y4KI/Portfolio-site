@@ -14,9 +14,14 @@ const Navbar = ({ ScrollY }) => {
         </a>
         <ul className="d-md-flex d-none m-0">
           {NavbarData.map((e) => (
-            <li key={e.id}>
+            <li
+              key={e.id}
+              className={
+                ScrollY >= e.itemTop && ScrollY < e.itemBottom ? "bordered" : ""
+              }
+            >
               <Link
-                className="test6"
+                className={`test6`}
                 to={e.title.toLowerCase()}
                 spy={true}
                 smooth={true}
