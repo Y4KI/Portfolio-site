@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { MainColors } from "./MainColors";
 
 export const NavbarWr = styled.nav`
-  background-color: ${MainColors.dark_1};
+  background-color: #ffffff20;
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -11,8 +12,7 @@ export const NavbarWr = styled.nav`
   padding: 20px 0;
   transition: 0.5s;
   &.TP {
-    background-color: #ffffff20;
-    backdrop-filter: blur(5px);
+    background-color: ${MainColors.dark_1};
   }
   a {
     color: #fff;
