@@ -2,23 +2,17 @@ import React, { useState } from "react";
 import PageTitle from "../Components/PageTitle";
 import { ContactWr } from "../styles/ContactWr";
 import { Fade } from "react-awesome-reveal";
-import { formData, messageData } from "../data/ContactData";
+import {
+  errorChecker,
+  formData,
+  inputModel,
+  messageData,
+} from "../data/ContactData";
 
 const Contact = () => {
   const [form, setForm] = useState(formData);
   const [message, setMessage] = useState(messageData);
 
-  const errorChecker = (array, data) => {
-    array.forEach((e) => {
-      if (!e.fieldModel) {
-        e.fieldError = "Please write your " + e.fieldFor;
-        data([...array]);
-      } else {
-        e.fieldError = "";
-        data([...array]);
-      }
-    });
-  };
   const CheckInfo = () => {
     errorChecker(form, setForm);
     errorChecker(message, setMessage);
@@ -26,15 +20,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     CheckInfo();
-  };
-
-  const inputModel = (
-    event,
-    index,
-    target = { name: form, function: setForm }
-  ) => {
-    target.name[index].fieldModel = event.target.value;
-    target.function([...target.name]);
   };
 
   return (
@@ -51,7 +36,7 @@ const Contact = () => {
                     name={"user_" + e.fieldFor}
                     placeholder={"Your " + e.fieldFor}
                     value={e.fieldModel}
-                    onChange={(e) => inputModel(e, idx)}
+                    onChange={(e) => inputModel(e, idx, { form, setForm })}
                   />
                   <label>{e.fieldError}</label>
                 </>

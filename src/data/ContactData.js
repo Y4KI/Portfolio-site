@@ -12,5 +12,20 @@ const messageData = [
     fieldType: "text",
   },
 ];
+const errorChecker = (array, data) => {
+  array.forEach((e) => {
+    if (!e.fieldModel) {
+      e.fieldError = "Please write your " + e.fieldFor;
+      data([...array]);
+    } else {
+      e.fieldError = "";
+      data([...array]);
+    }
+  });
+};
+const inputModel = (event, index, target) => {
+  target.name[index].fieldModel = event.target.value;
+  target.function([...target.name]);
+};
 
-export { formData, messageData };
+export { formData, messageData, errorChecker, inputModel };
