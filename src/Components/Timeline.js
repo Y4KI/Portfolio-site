@@ -2,6 +2,7 @@ import React from "react";
 import { TimelineWr } from "../styles/TimelineWr";
 import { FiArrowUp } from "react-icons/fi";
 import { TimelineData } from "../data/TimelineData";
+import { Zoom } from "react-awesome-reveal";
 
 const Timeline = () => {
   return (
@@ -15,7 +16,7 @@ const Timeline = () => {
           </a>
         </div>
         {TimelineData.map((e) => (
-          <div className={`row row-${(e.id % 2) + 1}`} key={e.id}>
+          <Zoom className={`row row-${(e.id % 2) + 1}`} key={e.id}>
             <section>
               <i className="icon"></i>
               <div className="details">
@@ -28,7 +29,7 @@ const Timeline = () => {
                 <i>- My Roadmap</i>
               </div>
             </section>
-          </div>
+          </Zoom>
         ))}
       </div>
     </TimelineWr>

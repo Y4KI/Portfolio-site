@@ -3,7 +3,7 @@ import { MainColors } from "./MainColors";
 
 export const ContactWr = styled.div`
   background-color: ${MainColors.dark_1};
-  padding: 100px 0;
+  padding: 0 0 50px;
   form {
     display: flex;
     margin: 20px 0;
