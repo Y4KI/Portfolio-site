@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainColors } from "./MainColors";
+import { MainColors } from "../data/MainColors";
 
 let size = "width: 100%; height: 100%;";
 const position3d =

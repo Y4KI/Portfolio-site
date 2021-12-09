@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainColors } from "./MainColors";
+import { MainColors } from "../data/MainColors";
 
 export const PageTitleWr = styled.div`
   text-align: center;

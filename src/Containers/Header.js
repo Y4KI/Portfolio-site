@@ -12,7 +12,14 @@ const Header = () => {
 
   return (
     <div>
-      <Up href="#" className={ScrollY > 300 ? "toUp" : "toUp d-none"}>
+      <Up
+        className={ScrollY > 300 ? "toUp" : "toUp d-none"}
+        to={"home"}
+        spy={true}
+        smooth={true}
+        offset={-80}
+        duration={100}
+      >
         <FiArrowUp />
       </Up>
       <Navbar ScrollY={ScrollY} />

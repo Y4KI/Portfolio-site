@@ -1,7 +1,8 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
-import { MainColors } from "./MainColors";
+import { MainColors } from "../data/MainColors";
 
-export const Up = styled.a`
+export const Up = styled(Link)`
   width: 50px;
   height: 50px;
   border-radius: 5px;
