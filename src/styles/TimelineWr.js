@@ -134,5 +134,13 @@ export const TimelineWr = styled.div`
     .wrapper .row {
       margin: 10px 0;
     }
+    .details {
+      span {
+        font-size: 16px;
+        &.title {
+          font-size: 20px;
+        }
+      }
+    }
   }
 `;
