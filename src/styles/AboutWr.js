@@ -3,6 +3,7 @@ import { MainColors } from "../data/MainColors";
 
 export const AboutWr = styled.div`
   background-color: ${MainColors.dark_1};
+  overflow: hidden;
   .row {
     .image {
       div {

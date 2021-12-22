@@ -15,5 +15,13 @@ export const Up = styled(Link)`
   bottom: 20px;
   z-index: 1000;
   opacity: 0.8;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 1;
+  }
 `;
